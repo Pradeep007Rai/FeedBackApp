@@ -1,0 +1,27 @@
+.button-padding{
+    padding-bottom: 110px;
+
+}
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    float: right;
+    background-color: azure;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(103,58,183);
+    border-radius : 50px!important;
+    color:white;
+}
+.button-left{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    float: left;
+    background-color: azure;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(103,58,183);
+    border-radius : 50px!important;
+    color:white;
+
+}

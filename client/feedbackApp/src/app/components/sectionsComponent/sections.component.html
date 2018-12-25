@@ -1,0 +1,10 @@
+<div class="container">
+        <app-question-section  *ngFor="let section of sectionsdata" [section]="section"></app-question-section>
+        <div class="button-padding">
+            <button mat-button (click)="logsomemassage()">Submit</button>
+            <button mat-button class="button-left" (click)="logsomemassage()">Clear</button>
+        </div>
+
+</div>
+
+

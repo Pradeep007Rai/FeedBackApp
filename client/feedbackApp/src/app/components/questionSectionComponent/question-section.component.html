@@ -1,0 +1,10 @@
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>{{section.sectionName}}</h1>
+  </div>
+
+  <app-question *ngFor="let quest of section.questions" [question]="quest" (answered)="quest.answer = $event"></app-question>
+
+</div>
+
