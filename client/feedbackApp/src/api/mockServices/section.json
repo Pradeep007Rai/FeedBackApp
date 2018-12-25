@@ -4,52 +4,52 @@
         "sectionName": "Library",
         "questions": [
           {
-            "question": "Suitability of timing ",
+            "question": "Suitability of timing ? ",
             "questionId": "1005",
             "answer": ""
           },
           {
-            "question": "Availability of reference book",
+            "question": "Availability of reference book ?",
             "questionId": "1006",
             "answer": ""
           },
           {
-            "question": "Are you satisfied with arrangement of book in library",
+            "question": "Are you satisfied with arrangement of book in library ?",
             "questionId": "1007",
             "answer": ""
           },
           {
-            "question": "Ration of the number of copies to the student",
+            "question": "Ration of the number of copies to the student ?",
             "questionId": "1008",
             "answer": ""
           },
           {
-            "question": "Sufficient number of textbook/Reference book",
+            "question": "Sufficient number of textbook/Reference book ?",
             "questionId": "1009",
             "answer": ""
           },
           {
-            "question": "Do you get library material on time",
+            "question": "Do you get library material on time ?",
             "questionId": "1010",
             "answer": ""
           },
           {
-            "question": "Availability of newspaper/periodicals/CD’s",
+            "question": "Availability of newspaper/periodicals/CD’s ?",
             "questionId": "1011",
             "answer": ""
           },
           {
-            "question": "Pleasant and peaceful environmental of library",
+            "question": "Pleasant and peaceful environmental of library ?",
             "questionId": "1012",
             "answer": ""
           },
           {
-            "question": "Are you satisfied with the issue/return service of library",
+            "question": "Are you satisfied with the issue/return service of library ?",
             "questionId": "1013",
             "answer": ""
           },
           {
-            "question": "Guidance of librarian",
+            "question": "Guidance of librarian ?",
             "questionId": "1014",
             "answer": ""
           }
@@ -57,35 +57,35 @@
       },
       {
         "sectionId": 901,
-        "sectionName": "Labrotry",
+        "sectionName": "Labrotry ?",
         "questions": [
           {
-            "question": "Suitability of timing",
+            "question": "Suitability of timing ?",
             "questionId": "1015",
             "answer": ""
           },
           {
-            "question": "Availability of lab assistance",
+            "question": "Availability of lab assistance ?",
             "questionId": "1016",
             "answer": ""
           },
           {
-            "question": "Availability of lab material",
+            "question": "Availability of lab material ?",
             "questionId": "1017",
             "answer": ""
           },
           {
-            "question": "Illumination ad ventilation",
+            "question": "Illumination ad ventilation ?",
             "questionId": "1018",
             "answer": ""
           },
           {
-            "question": "Cleanliness o lab",
+            "question": "Cleanliness o lab ?",
             "questionId": "1019",
             "answer": ""
           },
           {
-            "question": "Schedule of practical in advance",
+            "question": "Schedule of practical in advance ?",
             "questionId": "1020",
             "answer": ""
           }
@@ -96,22 +96,22 @@
         "sectionName": "Office",
         "questions": [
           {
-            "question": "Suitability of timing",
+            "question": "Suitability of timing ?",
             "questionId": "1021",
             "answer": ""
           },
           {
-            "question": "Availability of Staff",
+            "question": "Availability of Staff ?",
             "questionId": "1022",
             "answer": ""
           },
           {
-            "question": "Cooperation of staff members",
+            "question": "Cooperation of staff members ?",
             "questionId": "1023",
             "answer": ""
           },
           {
-            "question": "Promptness of providing service",
+            "question": "Promptness of providing service ?",
             "questionId": "1024",
             "answer": ""
           }
