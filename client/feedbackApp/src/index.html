@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>FeedbackApp</title>
@@ -13,7 +14,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="header">
+    <img src="/src/assets/images/logo.png">
+    <label>Pratibha College of Commerce and Computer Studies</br>Pimpri Chinchwad-411019</label>
+    </div>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="javascript:void(0)">Login</a>
+    <a href="javascript:void(0)">About Us</a>
+    <label class="label-left">Feedback System </label>
+  </div>
+
+  <div class="content">
+    <app-root></app-root>
+  </div>
+    <script>
+      window.onscroll = function () {
+        myFunction()
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+    </script>
+    <div class="footer">
+      <p>Student FeedBack System.</p>
+    </div>
 </body>
+
 </html>

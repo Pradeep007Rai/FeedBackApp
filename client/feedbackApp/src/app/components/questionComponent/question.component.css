@@ -5,8 +5,14 @@
     background-color: white!important;
     width: 100%;
     color : rgb(68, 27, 142);
-    border-radius : 50px!important;
+    border-radius : 90px!important;
+    padding-top: 1px;
+    padding-bottom: 1px;
 
+}
+.display-4
+{
+  font-size: 25px;
 }
 div.stars{
   width: 270px;
