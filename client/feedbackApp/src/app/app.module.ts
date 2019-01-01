@@ -8,7 +8,6 @@ import { MaterialModule } from './shared/material.module';
 import { FormsModule } from '@angular/forms';
 import { QuestionComponent } from './components/questionComponent/question.component';
 import { QuestionSectionComponent } from './components/questionSectionComponent/question-section.component';
-import { QuestionListComponent } from './questionListComponent/question-list/question-list.component';
 import { SectionsComponent } from './components/sectionsComponent/sections.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { SectionsComponent } from './components/sectionsComponent/sections.compo
     AppComponent,
     QuestionComponent,
     QuestionSectionComponent,
-    QuestionListComponent,
     SectionsComponent
   ],
   imports: [
