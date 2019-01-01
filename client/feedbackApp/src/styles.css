@@ -67,20 +67,24 @@ img {
   font-style: normal;
   font-variant: small-caps;
   text-transform: capitalize;
+  margin-top: -10px
 }
 
 #navbar a:hover {
   background-color: #ddd;
   color: black;
+  margin-top: -10px
 }
 
 #navbar a.active {
   background-color: #4CAF50;
   color: white;
+  margin-top: -10px
 }
 #navbar a.active:hover {
     background-color: #ddd;
     color: black;
+    margin-top: -10px
   }
 
 .content {

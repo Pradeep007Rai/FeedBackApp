@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
-import { delay } from 'q';
 
 @Component({
   selector: 'app-root',

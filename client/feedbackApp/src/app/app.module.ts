@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { QuestionComponent } from './components/questionComponent/question.component';
 import { QuestionSectionComponent } from './components/questionSectionComponent/question-section.component';
 import { SectionsComponent } from './components/sectionsComponent/sections.component';
+import { NavbarComponent } from './components/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
     QuestionSectionComponent,
-    SectionsComponent
+    SectionsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { SectionsComponent } from './components/sectionsComponent/sections.compo
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+             NavbarComponent]
 })
 export class AppModule { }
