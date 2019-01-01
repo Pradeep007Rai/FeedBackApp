@@ -20,8 +20,7 @@ color: #000000;
 font-weight: 700;
 text-decoration: none solid rgb(68, 68, 68);
 font-style: normal;
-font-variant: normal;
-text-transform: capitalize;
+font-variant: normal; 
 }
 div.stars{
   width: 270px;

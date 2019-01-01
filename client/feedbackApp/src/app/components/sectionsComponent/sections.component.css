@@ -24,5 +24,13 @@ button{
     background-color: rgba(16, 18, 129, 0.7);
     border-radius : 50px!important;
     color:white;
-
 }
+
+.lodding{
+    position:absolute;
+    top:0;
+    right:0;
+    padding-right: 200px;
+}
+
+

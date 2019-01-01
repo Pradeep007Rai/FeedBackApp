@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
-import { SectionService } from './services/section.service';
-import { SectionModule } from "./model/section/section.module";
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { delay } from 'q';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  implements OnInit {
+  lodding = true;
+
   constructor() {
+
+  }
+
+   ngOnInit() {
+
   }
 
 }

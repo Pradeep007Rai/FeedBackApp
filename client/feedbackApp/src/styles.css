@@ -6,6 +6,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f1f1f1;
 }
+::-webkit-scrollbar {
+  display: none;
+  } 
 
 .header {
   background-color: #f1f1f1;
@@ -13,11 +16,19 @@ body {
 }
 
 label {
-  color: #303288;
+  color: #294a70;
   vertical-align: middle;
   text-align: left;
   font-weight: 900;
 }
+.discription{
+  color: #666666;
+  font-size: 14px;
+  font-style: inherit;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin-bottom: 0;
+  }
 
 .label-left {
   font-family: Tahoma, Geneva, sans-serif;
@@ -37,6 +48,7 @@ img {
 #navbar {
   overflow: hidden;
   background-color: #333;
+  padding-right: 100px;
 }
 
 #navbar a {

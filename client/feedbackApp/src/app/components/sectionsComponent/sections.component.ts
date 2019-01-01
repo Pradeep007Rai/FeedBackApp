@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import { SectionModule } from 'src/app/model/section/section.module';
 import { SectionService } from 'src/app/services/section.service';
+import { delay } from 'q';
 
 @Component({
   selector: 'app-sections',
@@ -12,19 +13,25 @@ export class SectionsComponent implements OnInit {
   @Input() sections: SectionModule[];
   error: any;
   sectionsdata: SectionModule[];
+  lodding: boolean;
 
   logsomemassage(): void {
     console.log(this.sectionsdata);
   }
 
+
+
   constructor(private sectionService: SectionService) {
   }
   // tslint:disable-next-line:use-life-cycle-interface
-  ngOnInit(): void {
-    this.sectionService.getSection().subscribe(
+  async ngOnInit() {
+      this.lodding = true;
+      this.sectionService.getSection().subscribe(
       data => this.sectionsdata = data,
       err => this.error = err,
-      () => console.log('Data Loaded'));
+      async () => {await delay(1000);
+        this.lodding = false;
+      } );
   }
 
 }
