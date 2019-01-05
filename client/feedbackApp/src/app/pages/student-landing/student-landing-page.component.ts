@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-landing-page.component.css']
 })
 export class StudentLandingPageComponent implements OnInit {
-
+loading: boolean;
   constructor() { }
 
   ngOnInit() {

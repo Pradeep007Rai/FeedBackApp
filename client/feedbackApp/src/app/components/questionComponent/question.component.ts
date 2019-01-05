@@ -24,7 +24,7 @@ export class QuestionComponent implements OnInit {
 
   onClick(): void {
     this.answered.emit(this.question.answer);
-    this.audio = new Audio('/src/assets/sounds/tickel.wav');
+    this.audio = new Audio('assets/sounds/tickel.wav');
     this.audio.volume = this.question.answer / 5;
     this.audio.play();
   }
