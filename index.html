@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <title>FeedbackApp</title>
+  <base href="https://pradeep007rai.github.io/FeedBackApp/">
+
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="styles.4b8ac55bc007ddeff417.css"></head>
+
+<body>
+  <div class="header">
+    <a href="http://pcccs.org.in/" target="_blank">
+      <img src="/src/assets/images/logo.png">
+      <label>Pratibha College of Commerce and Computer Studies</br><span class="discription"> A Leading gorup of
+          educational institutes in PCMC area</span></label>
+    </a>   
+  </div>
+
+  <div id="navbar">
+    <app-navbar></app-navbar>
+  </div>
+
+  <div class="content">
+    <app-root></app-root>
+  </div>
+  <script>
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+  </script>
+  <div class="footer">
+    <p>Student FeedBack System &lt;/&gt;</p>
+  </div>
+<script type="text/javascript" src="runtime.06daa30a2963fa413676.js"></script><script type="text/javascript" src="polyfills.a5acfd4a5754e593d36f.js"></script><script type="text/javascript" src="main.e24ed135639e6f03f38a.js"></script></body>
+
+</html>
