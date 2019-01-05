@@ -296,7 +296,7 @@ var QuestionComponent = /** @class */ (function () {
     };
     QuestionComponent.prototype.onClick = function () {
         this.answered.emit(this.question.answer);
-        this.audio = new Audio('/src/assets/sounds/tickel.wav');
+        this.audio = new Audio('assets/sounds/tickel.wav');
         this.audio.volume = this.question.answer / 5;
         this.audio.play();
     };
@@ -538,7 +538,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<img src=\"/src/assets/images/devloper1.jpg\" alt=\"Avatar\" style=\"width:300px;height:auto;\">\n<div>Pradeep</div>"
+module.exports = "\n<img src=\"assets/images/devloper1.jpg\" alt=\"Avatar\" style=\"width:300px;height:auto;\">\n<div>Pradeep</div>"
 
 /***/ }),
 
