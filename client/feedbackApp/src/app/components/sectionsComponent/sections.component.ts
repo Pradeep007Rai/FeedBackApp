@@ -13,7 +13,7 @@ export class SectionsComponent implements OnInit {
   @Input() sections: SectionModule[];
   error: any;
   sectionsdata: SectionModule[];
-  lodding: boolean;
+  loading: boolean;
 
   logsomemassage(): void {
     console.log(this.sectionsdata);
@@ -25,12 +25,12 @@ export class SectionsComponent implements OnInit {
   }
   // tslint:disable-next-line:use-life-cycle-interface
   async ngOnInit() {
-      this.lodding = true;
+      this.loading = true;
       this.sectionService.getSection().subscribe(
       data => this.sectionsdata = data,
       err => this.error = err,
       async () => {await delay(1000);
-        this.lodding = false;
+        this.loading = false;
       } );
   }
 

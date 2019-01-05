@@ -16,7 +16,7 @@ export class QuestionSectionComponent implements OnInit {
   questionModel: QuestionModule[];
   error: any;
   msg: any;
-  @Input() section: SectionModule[];
+  @Input() section: SectionModule;
 
   ngOnInit() {
     this.header = 'Here comes the Header';

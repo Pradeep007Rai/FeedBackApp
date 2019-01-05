@@ -10,6 +10,11 @@ import { QuestionComponent } from './components/questionComponent/question.compo
 import { QuestionSectionComponent } from './components/questionSectionComponent/question-section.component';
 import { SectionsComponent } from './components/sectionsComponent/sections.component';
 import { NavbarComponent } from './components/navbar.component';
+import { AdminLandingPageComponent } from './pages/admin-landing/admin-landing-page.component';
+import { StudentLandingPageComponent } from './pages/student-landing/student-landing-page.component';
+import { RouterModule } from '@angular/router';
+import { AboutusPageComponent } from './pages/aboutus/aboutus-page.component';
+import { PagenotfoundPageComponent } from './pages/pagenotfound/pagenotfound-page.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +22,25 @@ import { NavbarComponent } from './components/navbar.component';
     QuestionComponent,
     QuestionSectionComponent,
     SectionsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminLandingPageComponent,
+    StudentLandingPageComponent,
+    AboutusPageComponent,
+    PagenotfoundPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path : 'student-landing', component: StudentLandingPageComponent},
+      {path: 'admin-landing', component: AdminLandingPageComponent},
+      {path: 'aboutus', component: AboutusPageComponent},
+      {path: 'welcome', component: AdminLandingPageComponent},
+      {path: '**', component: PagenotfoundPageComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent,

@@ -9,8 +9,9 @@ import { QuestionModule } from 'src/app/model/question/question.module';
 
 export class QuestionComponent implements OnInit {
   questionModel: QuestionModule;
-  @Input() question: QuestionModule ;
+  @Input() question: QuestionModule;
   @Output() answered: EventEmitter<number> = new EventEmitter<number>();
+  audio: any;
 
   ngOnInit() {
     this.questionModel = this.question;
@@ -18,11 +19,14 @@ export class QuestionComponent implements OnInit {
   }
 
   onAnswer(): void {
-   this.answered.emit(this.question.answer);
+    this.answered.emit(this.question.answer);
   }
 
   onClick(): void {
-      this.answered.emit(this.question.answer);
+    this.answered.emit(this.question.answer);
+    this.audio = new Audio('/src/assets/sounds/tickel.wav');
+    this.audio.volume = this.question.answer / 5;
+    this.audio.play();
   }
 
 }
