@@ -23,6 +23,7 @@
   text-transform: capitalize;
   text-align: center;
   height: 100px;
+  word-wrap:break-word;
 }
 
 h1 {
@@ -33,7 +34,7 @@ h1 {
 }
 
 .content {
-  width: 100%;
+  width: 113%;
   background-color: rgba(87, 89, 167,1);
   padding-top:10px; 
 }
@@ -53,6 +54,7 @@ h1 {
     color: black;
     border-radius: 50px !important;
     padding: 35px 5px;
+    margin-left: -25px;
   }
   .content .header {
     position: sticky;
@@ -78,6 +80,7 @@ h1 {
     text-align: center;
     height: 100px;
     margin-top:-40px;
+    word-wrap:break-word;
   }
 
 }

@@ -6,7 +6,7 @@
 button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
-    float: right;
+    float: center;
     background-color: azure;
     width: 200px;
     height: 75px;
@@ -14,17 +14,7 @@ button{
     border-radius : 50px!important;
     color:white;
 }
-.button-left{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    float: left;
-    background-color: azure;
-    width: 200px;
-    height: 75px;
-    background-color: rgba(16, 18, 129, 0.7);
-    border-radius : 50px!important;
-    color:white;
-}
+
 
 @media only screen and (max-width: 600px) {
     button{
@@ -38,18 +28,19 @@ button{
         border-radius : 50px!important;
         color:white;
     }
-    .button-left{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 25px;
-        float: left;
-        background-color: azure;
-        width: 130px;
-        height: 45px;
-        background-color: rgba(16, 18, 129, 0.7);
-        border-radius : 50px!important;
-        color:white;
-    }
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
 
 .loading{
     position:absolute;
