@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/material.module';
@@ -15,6 +16,7 @@ import { StudentLandingPageComponent } from './pages/student-landing/student-lan
 import { RouterModule } from '@angular/router';
 import { AboutusPageComponent } from './pages/aboutus/aboutus-page.component';
 import { PagenotfoundPageComponent } from './pages/pagenotfound/pagenotfound-page.component';
+import { TeachersClasswiseStatisticsComponent } from './components/teachers-classwise-statistics/teachers-classwise-statistics.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,17 @@ import { PagenotfoundPageComponent } from './pages/pagenotfound/pagenotfound-pag
     AdminLandingPageComponent,
     StudentLandingPageComponent,
     AboutusPageComponent,
-    PagenotfoundPageComponent
-  ],
+    PagenotfoundPageComponent,
+    TeachersClasswiseStatisticsComponent
+
+],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
     HttpClientModule,
+    Ng2GoogleChartsModule,
     RouterModule.forRoot([
       {path : 'student-landing', component: StudentLandingPageComponent},
       {path: 'admin-landing', component: AdminLandingPageComponent},
