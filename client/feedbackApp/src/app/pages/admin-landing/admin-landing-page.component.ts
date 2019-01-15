@@ -12,7 +12,7 @@ export class AdminLandingPageComponent implements OnInit {
 
   ngOnInit() {
       this.data = {
-        points : [4, 5, 2, 3, 4, 2, 3, 4, 5],
+        points : [4, 5, 2, 3, 4, 2.3, 3, 4, 5],
       teacherName : 'Aparna',
       className : 'FYBSc',
       subjectName : 'Programming in C'

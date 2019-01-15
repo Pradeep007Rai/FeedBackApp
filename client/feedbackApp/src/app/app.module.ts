@@ -16,6 +16,8 @@ import { StudentLandingPageComponent } from './pages/student-landing/student-lan
 import { RouterModule } from '@angular/router';
 import { AboutusPageComponent } from './pages/aboutus/aboutus-page.component';
 import { PagenotfoundPageComponent } from './pages/pagenotfound/pagenotfound-page.component';
+// tslint:disable-next-line:max-line-length
+import { TeachersClasswiseDetailedStatisticsMoreComponent, TeachersClasswiseDetailedStatisticsComponent } from './components/teachers-classwise-detailed-statistics/teachers-classwise-detailed-statistics.component';
 import { TeachersClasswiseStatisticsComponent } from './components/teachers-classwise-statistics/teachers-classwise-statistics.component';
 
 @NgModule({
@@ -29,6 +31,8 @@ import { TeachersClasswiseStatisticsComponent } from './components/teachers-clas
     StudentLandingPageComponent,
     AboutusPageComponent,
     PagenotfoundPageComponent,
+    TeachersClasswiseDetailedStatisticsMoreComponent,
+    TeachersClasswiseDetailedStatisticsComponent,
     TeachersClasswiseStatisticsComponent
 
 ],
@@ -49,6 +53,7 @@ import { TeachersClasswiseStatisticsComponent } from './components/teachers-clas
   ],
   providers: [],
   bootstrap: [AppComponent,
-             NavbarComponent]
+             NavbarComponent],
+  entryComponents: [TeachersClasswiseDetailedStatisticsMoreComponent]
 })
 export class AppModule { }
