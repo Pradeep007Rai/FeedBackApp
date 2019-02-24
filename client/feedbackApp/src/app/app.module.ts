@@ -47,7 +47,12 @@ import { TeachersClasswiseStatisticsComponent } from './components/teachers-clas
       {path : 'student-landing', component: StudentLandingPageComponent},
       {path: 'admin-landing', component: AdminLandingPageComponent},
       {path: 'aboutus', component: AboutusPageComponent},
-      {path: 'welcome', component: AdminLandingPageComponent},
+      {path: 'welcome', component: AdminLandingPageComponent,
+      children: [
+        {path: 'test', component: PagenotfoundPageComponent, outlet: 'inner'},
+        {path: 'teachersDeatail', component: TeachersClasswiseStatisticsComponent, outlet: 'inner'}
+      ]
+    },
       {path: '**', component: PagenotfoundPageComponent}
     ])
   ],

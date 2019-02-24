@@ -1,7 +1,36 @@
-<div class="col-sm-7 col-xs-7" style="float: initial;margin:auto">
+<!-- <div class="col-sm-7 col-xs-7" style="float: initial;margin:auto">
 <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics>
 <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics>
 <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics>
 <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics>
 <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics>
-</div>
+</div> -->
+
+    <div class="row">
+            <div class="col-xs-10">
+                     <!-- <app-teachers-classwise-statistics [graphData]="data" ></app-teachers-classwise-statistics> -->
+                    <router-outlet name="inner"></router-outlet>
+                </div>
+        <div class="col-xs-2">
+            <ul>
+                <li>
+                    <a [routerLink]="['/welcome', {outlets: {'inner':['test']}}]">Products List</a>
+                </li>
+                <li>
+                        <a [routerLink]="['/welcome', {outlets: {'inner':['teachersDeatail']}}]">Products List</a>
+                    </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="aboutus">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Manage Forms</a></li>
+                <li><a href="#news">Manage Class Details</a></li>
+                <li><a href="#contact">Manage Teacher Details</a></li>
+                <li><a href="#about">Registration</a></li>
+                <li><a href="#home">Help</a></li>
+            
+              </ul>
+        </div>
+    </div>
