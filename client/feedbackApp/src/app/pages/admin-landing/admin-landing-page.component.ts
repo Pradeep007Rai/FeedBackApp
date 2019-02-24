@@ -16,6 +16,6 @@ export class AdminLandingPageComponent implements OnInit {
       teacherName : 'Aparna',
       className : 'FYBSc',
       subjectName : 'Programming in C'
-    }
+    };
 }
 }

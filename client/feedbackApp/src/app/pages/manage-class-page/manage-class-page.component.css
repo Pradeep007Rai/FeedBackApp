@@ -1,0 +1,14 @@
+mat-card{
+    max-width: 400px;
+    padding: 5px;
+    border-color: black;
+    border-style: double;
+    background-color: #92b9ff;
+}
+button{
+    float: right;
+    background-color: cornflowerblue;
+}
+mat-form-field{
+    width: 300px!important;
+}

@@ -16,11 +16,6 @@ getSection(): Observable<SectionModule[]> {
 }
 
 
-
-getString(): Observable<string> {
-  return this.http.get<string>('api/mockServices/string.json');
-}
-
   constructor(private http: HttpClient) {
   }
 }

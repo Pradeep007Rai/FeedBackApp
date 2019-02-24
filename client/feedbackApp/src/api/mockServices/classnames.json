@@ -1,0 +1,18 @@
+[
+    {
+        "classId": 1,
+        "className": "FYMSC"
+    },
+    {
+        "classId": 2,
+        "className": "SYMSC"
+    },
+    {
+        "classId": 3,
+        "className": "TYMSC"
+    },
+    {
+        "classId": 5,
+        "className": "EYMSC"
+    }
+]

@@ -19,6 +19,9 @@ import { PagenotfoundPageComponent } from './pages/pagenotfound/pagenotfound-pag
 // tslint:disable-next-line:max-line-length
 import { TeachersClasswiseDetailedStatisticsMoreComponent, TeachersClasswiseDetailedStatisticsComponent } from './components/teachers-classwise-detailed-statistics/teachers-classwise-detailed-statistics.component';
 import { TeachersClasswiseStatisticsComponent } from './components/teachers-classwise-statistics/teachers-classwise-statistics.component';
+import { ManageClassPageComponent } from './pages/manage-class-page/manage-class-page.component';
+import { ClassInfoComponent } from './components/class-info/class-info.component';
+import { ClassFilter } from './Filter/ClassFilter.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { TeachersClasswiseStatisticsComponent } from './components/teachers-clas
     PagenotfoundPageComponent,
     TeachersClasswiseDetailedStatisticsMoreComponent,
     TeachersClasswiseDetailedStatisticsComponent,
-    TeachersClasswiseStatisticsComponent
+    TeachersClasswiseStatisticsComponent,
+    ManageClassPageComponent,
+    ClassInfoComponent,
+    ClassFilter
 
 ],
   imports: [
@@ -49,8 +55,9 @@ import { TeachersClasswiseStatisticsComponent } from './components/teachers-clas
       {path: 'aboutus', component: AboutusPageComponent},
       {path: 'welcome', component: AdminLandingPageComponent,
       children: [
-        {path: 'test', component: PagenotfoundPageComponent, outlet: 'inner'},
-        {path: 'teachersDeatail', component: TeachersClasswiseStatisticsComponent, outlet: 'inner'}
+        {path: 'teachersDeatail', component: TeachersClasswiseStatisticsComponent, outlet: 'inner'},
+        {path: 'ClassDeatailPage', component: ManageClassPageComponent, outlet: 'inner'},
+        {path: '**', component: PagenotfoundPageComponent, outlet: 'inner'}
       ]
     },
       {path: '**', component: PagenotfoundPageComponent}
