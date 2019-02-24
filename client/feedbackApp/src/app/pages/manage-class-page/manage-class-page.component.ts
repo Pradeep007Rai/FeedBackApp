@@ -10,8 +10,8 @@ import { ClassModel } from 'src/app/model/class/class.model';
 export class ManageClassPageComponent implements OnInit {
   classes: any[];
   searchString: string;
-  addclass: ClassModel;
   className: string;
+  addNewClass: any;
   sections = [
     'Computer Science',
     'Commerce',
@@ -27,8 +27,9 @@ export class ManageClassPageComponent implements OnInit {
     }
   }
   addClass() {
-    this.addClass['className'] = this.className;
-      this.classes.push(this.addClass);
+     this.addNewClass = new Object();
+    this.addNewClass['className'] = this.className;
+      this.classes.push(this.addNewClass);
       }
   ngOnInit() {
     this.classService.getClassDetail().subscribe(
